@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 @Data
 @EntityListeners(AuditingEntityListener.class)
+@EqualsAndHashCode(callSuper = false)
 public class AuditEntity {
 
     @Column(name="created_by")

@@ -2,9 +2,12 @@ package com.k8s.application_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Setter;
 
 @Entity(name = "applications")
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class ApplicationEntity extends AuditEntity {
 
     @Id

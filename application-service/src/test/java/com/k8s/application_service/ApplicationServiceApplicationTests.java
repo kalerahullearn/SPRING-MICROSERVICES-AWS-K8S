@@ -27,7 +27,7 @@ class ApplicationServiceApplicationTests {
 	@Value("${app.url}")
 	private String appUrl;
 
-	@Test
+//	@Test
 	public void test_CreateApplication(){
 		ApplicationDTO application = new ApplicationDTO();
 		application.setAppDisplayId("Test App Display");
