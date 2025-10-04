@@ -1,6 +1,10 @@
 package com.k8s.application_service;
 
+import com.k8s.application_service.entity.AuditEntity;
+import com.k8s.common.dto.AuditDTO;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
+import org.modelmapper.spi.MatchingStrategy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +21,12 @@ public class ApplicationServiceApplication {
 
 	@Bean
 	public ModelMapper modelMapper(){
-		return new ModelMapper();
+		ModelMapper mapper = new ModelMapper();
+		mapper.getConfiguration().setFieldMatchingEnabled(true)
+				.setFieldAccessLevel(org.modelmapper.config.Configuration.AccessLevel.PRIVATE)
+				.setMatchingStrategy(MatchingStrategies.STRICT);
+
+		return mapper;
 	}
 
 	@Bean

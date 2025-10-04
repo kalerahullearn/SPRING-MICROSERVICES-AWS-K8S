@@ -1,8 +1,10 @@
 package com.k8s.common.dto;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class PolicyDTO extends AuditDTO {
 
     private Long id;

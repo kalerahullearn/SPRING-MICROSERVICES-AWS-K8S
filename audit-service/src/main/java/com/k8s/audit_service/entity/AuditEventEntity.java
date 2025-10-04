@@ -2,11 +2,13 @@ package com.k8s.audit_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 
 @Data
 @Entity(name="audit")
+@EqualsAndHashCode(callSuper = false)
 public class AuditEventEntity {
 
     @Id

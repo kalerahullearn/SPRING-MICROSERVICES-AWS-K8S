@@ -1,5 +1,7 @@
-/Users/rahulonkarkale/Documents/code_workspace/CONSENTS/common/src/main/java/com/cms/dto/ApplicationDTO.java
-/Users/rahulonkarkale/Documents/code_workspace/CONSENTS/common/src/main/java/com/cms/dto/AuditDTO.java
-/Users/rahulonkarkale/Documents/code_workspace/CONSENTS/common/src/main/java/com/cms/dto/PolicyDTO.java
-/Users/rahulonkarkale/Documents/code_workspace/CONSENTS/common/src/main/java/com/cms/dto/ResponseEvent.java
-/Users/rahulonkarkale/Documents/code_workspace/CONSENTS/common/src/main/java/com/cms/exception/EntityNotFoundException.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/ApplicationDTO.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/AuditDTO.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/AuditEventDTO.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/EmailDTO.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/PolicyDTO.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/dto/ResponseEvent.java
+/Users/rahulonkarkale/Documents/code_workspace/SPRING-MICROSERVICES-AWS-K8S/common/src/main/java/com/k8s/common/exception/EntityNotFoundException.java

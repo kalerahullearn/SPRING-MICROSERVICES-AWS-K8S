@@ -43,7 +43,7 @@ public class ApplicationService {
     public ApplicationDTO createApplication(ApplicationDTO app) {
         ApplicationEntity appToAdd = mapper.map(app, ApplicationEntity.class);
         String displayId = DisplayIDGenerator.generate();
-        appToAdd.setAppDisplayId(displayId);
+        appToAdd.setDisplayId(displayId);
         ApplicationEntity saved = applicationRepository.save(appToAdd);
         ApplicationDTO dto = mapper.map(saved, ApplicationDTO.class);
 
@@ -67,7 +67,7 @@ public class ApplicationService {
     }
 
     private void addAudit(AuditEventDTO auditEvent){
-        Object returnObj = restTemplate.postForEntity(auditUrl+"/api/v1/audits/", auditEvent, Object.class);
-        System.out.println(returnObj);
+//        Object returnObj = restTemplate.postForEntity(auditUrl+"/api/v1/audits/", auditEvent, Object.class);
+//        System.out.println(returnObj);
     }
 }

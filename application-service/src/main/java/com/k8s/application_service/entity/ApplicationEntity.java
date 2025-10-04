@@ -14,11 +14,19 @@ public class ApplicationEntity extends AuditEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long appId;
     @Column(name = "app_display_id", updatable = false)
-    private String appDisplayId;
+    private String displayId;
     @Column(name = "app_name")
     private String appName;
     @Column(name = "owner_email")
     private String ownerEmail;
     @Column(name = "deployment_id")
     private String deploymentId;
+
+    public String getDisplayId() {
+        return displayId;
+    }
+
+    public void setDisplayId(String displayId) {
+        this.displayId = displayId;
+    }
 }
